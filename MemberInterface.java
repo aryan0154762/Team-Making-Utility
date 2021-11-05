@@ -4,7 +4,7 @@ import java.sql.*;
 
 
 public class MemberInterface {
-    int userID;
+    final int userID;
     String name;
     Skill skill1;
     Skill skill2;
