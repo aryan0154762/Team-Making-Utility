@@ -24,7 +24,7 @@ public class DatabaseInterface {
             // statement link to database
             Statement stmt=link.createStatement(ResultSet.TYPE_FORWARD_ONLY,ResultSet.CONCUR_READ_ONLY);
             // to get the result set
-            st = stmt.executeQuery("SELECT Name FROM Members");
+            st = stmt.executeQuery("SELECT Name FROM Members ORDER BY Name");
 
             while (st.next()) {
                 System.out.println(st.getString(1));
