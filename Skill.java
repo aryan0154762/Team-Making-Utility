@@ -10,7 +10,7 @@ public enum Skill{
     Delegation,
     Networking;
 
-    public static Skill converter(int skillNo) {
+    public static Skill intToSkill(int skillNo) {
         switch(skillNo) {
             case 0:
                 return Skill.Economics;
@@ -36,7 +36,59 @@ public enum Skill{
         return null;
     }
 
+    public int skillToInt() {
+        return this.ordinal();
+    }
+
+    public static int strToInt(String skill) {
+        if (skill.matches(".*Economics.*") || skill.matches(".*economics.*")) {
+            return 0;
+        }
+        else if (skill.matches(".*Data.*") || skill.matches(".*data.*")) {
+            return 1;
+        }
+        else if (skill.matches(".*Financial.*") || skill.matches(".*financial.*")) {
+            return 2;
+        }
+        else if (skill.matches(".*Negotiation.*") || skill.matches(".*negotiation.*")) {
+            return 3;
+        }
+        else if (skill.matches(".*Sales.*") || skill.matches(".*sales.*")) {
+            return 4;
+        }
+        else if (skill.matches(".*Business.*") || skill.matches(".*business.*")) {
+            return 5;
+        }
+        else if (skill.matches(".*Leadership.*") || skill.matches(".*leadership.*")) {
+            return 6;
+        }
+        else if (skill.matches(".*Communication.*") || skill.matches(".*communication.*")) {
+            return 7;
+        }
+        else if (skill.matches(".*Delegation.*") || skill.matches(".*delegation.*")) {
+            return 8;
+        }
+        else if (skill.matches(".*Networking.*") || skill.matches(".*networking.*")) {
+            return 9;
+        }
+
+        return -1;
+    }
+
+    public static void printAll() {
+        System.out.println("Economics");
+        System.out.println("Data_Analysis");
+        System.out.println("Financial_Accounting");
+        System.out.println("Negotiation");
+        System.out.println("Sales_Marketing");
+        System.out.println("Business_Management");
+        System.out.println("Leadership");
+        System.out.println("Effective_Communication");
+        System.out.println("Delegation");
+        System.out.println("Networking");
+    }
+
     public static void main(String[] args) { // tester
-        System.out.println("this shouldn't be visible");
+        System.out.println(Skill.intToSkill(Skill.strToInt("data")));
     }
 }
