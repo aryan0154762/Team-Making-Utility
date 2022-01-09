@@ -1,6 +1,6 @@
 # Team-Making-Utility
 
-This program is a successor of the (Team Making Tool)[https://github.com/arysinh/Team-Making-Tool/tree/main] project.
+This program is a successor of the [Team Making Tool](https://github.com/arysinh/Team-Making-Tool/tree/main) project.
 
 ## The program aimed to accomplish the following :
 1. Store the skills of each member/employee with their details.
