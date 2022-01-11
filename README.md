@@ -2,6 +2,8 @@
 
 This program is a successor of the [Team Making Tool](https://github.com/arysinh/Team-Making-Tool/tree/main) project.
 
+![Example GIF](https://github.com/arysinh/Team-Making-Utility/blob/main/output.gif)
+
 ## The program aimed to accomplish the following :
 1. Store the skills of each member/employee with their details.
 2. Maintain their relations(friends or foes) with other members
